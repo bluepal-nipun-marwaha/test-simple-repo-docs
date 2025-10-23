@@ -1,59 +1,27 @@
-## Calculator Application Documentation - Updated Version
+## Table of Contents
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Calculator Operations](#calculator-operations)
+6. [Menu Options](#menu-options)
+7. [Error Handling](#error-handling)
+8. [History Management](#history-management)
+9. [Examples](#examples)
+10. [Testing](#testing)
 
-**Version:** [Current version number]  
-**Date of Update:** [Date when documentation was last modified due to commit change]
+## Overview
+The Calculator Application is a Python-based command-line calculator that provides basic arithmetic operations, power/exponentiation (including the newly added factorial operation), and comprehensive error handling with an interactive menu interface. The application also includes calculation history tracking to review past computations seamlessly within its user experience framework.
 
----
-
-# Table of Contents (Updated)
-1. Executive Summary
-2. Introduction and Overview
-3. System Architecture
-4. Feature Specifications - Updated with New Operations
-5. User Interface Design
-6. Technical Implementation Details for the Factorial Operation
-7. Error Handling Framework Enhancements
-8. Testing Strategy (Updated)
-9. History Management Updates and Examples
-10. Documentation of Installation Process - Updated with New Changes
-11. Usage Instructions - Incorporating Factorial Operation Guide
-12. Calculator Operations Expanded to include the Factorial Function (Updated)
-13. Menu Options Enhancement for Accessing Advanced Features like Factorials
-14. Detailed Examples of Using New and Updated Features Including Error Handling Scenarios
-15. Test Cases - Addition of Unit Tests to Cover the Newly Added Calculator Operation (Updated)
-
----
-
-## Executive Summary
-This documentation has been updated following a recent commit that introduced additional functionality, including factorial operations and enhanced error handling mechanisms into our Python-based command-line calculator application. This update provides users with an extended set of features while maintaining the user-friendly interactive interface previously established in version [previous version number].
-
-## Introduction and Overview (Updated)
-The Calculator Application continues to be a robust, open-source tool designed for executing basic arithmetic operations such as addition, subtraction, multiplication, division with graceful error handling. With the recent commit by bluepal-nipun-marwaha on [date of last update], we've expanded our calculator capabilities into advanced mathematical functions like factorial and power calculations while ensuring a seamless user experience through an interactive menu interface that tracks calculation history for reference purposes.
-
-## System Architecture (Unchanged)
-[Provide details about the system architecture if necessary]
-
-## Feature Specifications - Updated with New Operations
-- **Basic Arithmetic Operations**: Addition, subtraction, multiplication, division [unchanged content].
-- **Advanced Mathematical Functions** (New): Power/exponentiation and factorial operations. The calculator now supports calculating the nth power of a number as well as computing factorial values for integers using recursion or iteration methods where appropriate to optimize performance based on input size.
-- [Additional features if necessary]
-
-## User Interface Design (Unchanged)
-[Provide details about user interface design and interaction flow with new changes highlighted, if any.]
-
-## Technical Implementation Details for the Factorial Operation (New Section Added)
-The factorial operation has been implemented using a recursive approach to calculate n! where 'n' is an integer input. The function `factorial(n)` returns the product of all positive integers up to and including that number, with special handling when negative numbers are entered or non-integer values provided as inputs for error checking before attempting any calculation.
-
-## Error Handling Framework Enhancements (Updated)
-The application now includes comprehensive input validation across its operations: it checks if the user's entry is a valid integer and handles division by zero errors gracefully, displaying appropriate messages to guide users towards correct usage of calculator functions without terminating unexpectedly. The error handling framework has been updated in line with these changes for consistency throughout all features.
-
-## Testing Strategy (Updated)
-Unit tests have been added specifically targeting the newly introduced factorial and power operations, ensuring that they function correctly across a range of inputs including edge cases such as zero or negative numbers where applicable within our calculator's logic constraints. These unit tests are part of an ongoing process to maintain high-quality standards for all features in this application.
-
-## History Management Updates and Examples (Updated)
-The history management section has been expanded with examples demonstrating the recording, viewing, and navigating through calculation histories that now include factorial operations alongside basic arithmetic calculations. These historical records are maintained within a session-specific context to ensure data persistence between uses of our calculator application for educational or reference purposes by users.
-
-## Documentation of Installation Process (Updated)
-[Provide updated installation instructions if necessary, detailing any changes made due to the new feature addition.]
-
-## Usage Instru0ctions - Incorporating Factorial Operation Guide (
+## Features
+- **Basic Arithmetic Operations**: Addition, subtraction, multiplication, division (including the newly added factorial operation)
+- **Advanced Operations**: Power/exponentiation and Factorial operations for a broader range of mathematical calculations
+- **Calculation History Tracking**: Record all previous computations to enable users to review their history easily. This includes both basic arithmetic results as well as advanced factorial operation outcomes.
+- **Error Handling Framework**: Implement robust error handling mechanisms that gracefully manage invalid inputs and division by zero scenarios, ensuring a smooth user experience even when encountering unexpected situations.
+- **Interactive Command-Line Interface (CLI)**: Provide an easy-to-use command-line interface for users to interact with the calculator effortlessly through simple commands or typed input sequences. This enhances accessibility and usability across different platforms, including Windows, macOS, and Linux environments.
+- **History Management System**: Develop a comprehensive history management system that allows efficient navigation between past calculations while maintaining optimal performance even when dealing with an extensive calculation history spanning multiple sessions or long periods of use. The addition of the factorial operation necessitates enhancements to this section for effective tracking and display within our documentation context, ensuring users can fully understand how their results are recorded over time in relation to more complex operations like calculating a number's factorial value.
+- **Examples**: Provide clear examples that demonstrate the usage of basic arithmetic functions as well as advanced exponentiation/factorial calculations for various input scenarios and edge cases, ensuring users can understand how these features work within our application framework effectively. These should include typical use cases along with complex or less common operations to ensure a comprehensive understanding across different user groups.
+- **Testing Procedures**: Outline the testing procedures employed during development that guarantee accuracy in both basic and advanced calculations, including factorial results as well as error handling mechanisms for invalid inputs/division by zero scenarios. This section should detail how our application ensures reliability across a diverse range of user interactions while maintaining optimal performance even when dealing with complex operations like calculating the factorial value within its history management system and CLI interface, thereby reinforcing confidence in using this calculator tool for various mathematical computations effectively.
+- **Technical Implementation**: Describe how these features are implemented technically to ensure a seamless user experience across different platforms while maintaining optimal performance even when dealing with complex operations like calculating the factorial value within its history management system and CLI interface, thereby reinforcing confidence in using this calculator tool for various mathematical computations effectively. This section should provide insights into our development process that ensures a seamless user experience across different platforms while maintaining optimal performance even when dealing with complex operations like calculating the factorial value within its history management system and CLI interface, thereby reinforcing confidence in using this calculator tool for various mathematical computations effectively.
+- **System Architecture**: Detail our application's architecture that supports these features efficiently across different platforms while maintaining optimal performance even when dealing with complex operations like calculating the factorial value within its history management system and CLI interface, thereby reinforcing confidence in using this calculator tool for various mathematical computations effectively. This section should provide insights into how our application's architecture ensures a seamless user experience across different platforms while maintaining optimal performance even when dealing with complex operations like calculating the factorial value within its history management system and CLI interface, thereby reinforcing confidence in using this calculator tool for various mathematical computations effectively.
+- **User Interface Design**: Describe our application's UI design that supports these features efficiently across different platforms while maintaining optimal performance even when dealing with complex operations like calculating the factorial value within its history management system and CLI
