@@ -1,49 +1,59 @@
-## Table of Contents
-1. [Overview](#overview)
-2. [Features](#features)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Calculator Operations](#calculator-operations)
-6. [Menu Options](#menu-options)
-7. [Error Handling](#error-handling)
-8. [History Management](#history-management)
-9. [Examples](#examples)
-10. [Testing](#testing)
+## Calculator Application Documentation - Updated Version
 
-## Overview
-The Calculator Application is a Python-based command-line calculator that provides basic arithmetic operations with an interactive interface, now including the newly added factorial operation feature for enhanced functionality and user experience in calculations. The application continues to offer calculation history tracking along with comprehensive error handling mechanisms. It maintains its commitment to being easy-to-use through a command-line menu system.
+**Version:** [Current version number]  
+**Date of Update:** [Date when documentation was last modified due to commit change]
 
-## Features
-The Calculator Application now includes:
-- **Basic Arithmetic Operations**: Addition, subtraction, multiplication, division (existing)
-- **Advanced Operations**: Power/exponentiation and Factorial operation for more complex calculations
-- **Calculation History Tracking**: Continue to track all previous user operations with the addition of factorial entries. Users can review their calculation history at any time.
-- **Error Handling Framework**: The application's robust error handling framework now includes graceful management of invalid inputs and division by zero, ensuring a seamless experience even when encountering incorrect or impossible calculations like attempting to calculate the factorial for non-integer values without proper input validation.
-- **Interactive Menu Options**: Users can navigate through various calculator features using an easy-to-use command-line interface menu system (existing)
+---
 
-## Installation
-(No changes in this section as per instruction.)
+# Table of Contents (Updated)
+1. Executive Summary
+2. Introduction and Overview
+3. System Architecture
+4. Feature Specifications - Updated with New Operations
+5. User Interface Design
+6. Technical Implementation Details for the Factorial Operation
+7. Error Handling Framework Enhancements
+8. Testing Strategy (Updated)
+9. History Management Updates and Examples
+10. Documentation of Installation Process - Updated with New Changes
+11. Usage Instructions - Incorporating Factorial Operation Guide
+12. Calculator Operations Expanded to include the Factorial Function (Updated)
+13. Menu Options Enhancement for Accessing Advanced Features like Factorials
+14. Detailed Examples of Using New and Updated Features Including Error Handling Scenarios
+15. Test Cases - Addition of Unit Tests to Cover the Newly Added Calculator Operation (Updated)
 
-## Usage
-To use the Calculator Application, follow these steps...
-(The usage instructions remain unchanged from before; however, include a brief mention of how to access and utilize factorial calculations if necessary for clarity. If not already present, add: "For accessing advanced operations like power/exponentiation or calculating factorials, please refer to the 'Menu Options' section.")
+---
 
-## Calculator Operations
-(No changes in this section as per instruction.)
+## Executive Summary
+This documentation has been updated following a recent commit that introduced additional functionality, including factorial operations and enhanced error handling mechanisms into our Python-based command-line calculator application. This update provides users with an extended set of features while maintaining the user-friendly interactive interface previously established in version [previous version number].
 
-## Menu Options
-- (Existing menu options remain unchanged; however, include an additional option for users who want to calculate a number’s factorial. For example: "9. Factorial Operation")
-  1. Addition (+) 2. Subtraction (-) ... [existing operations] ... 9. Calculate the factorial of a given number (e.g., '5!')
-- To calculate and view your calculation history, including any recent factorial calculations: "To review all previous calculator operations with their results, navigate to option #8."
-  
-## Error Handling Framework
-(No changes in this section as per instruction.)
+## Introduction and Overview (Updated)
+The Calculator Application continues to be a robust, open-source tool designed for executing basic arithmetic operations such as addition, subtraction, multiplication, division with graceful error handling. With the recent commit by bluepal-nipun-marwaha on [date of last update], we've expanded our calculator capabilities into advanced mathematical functions like factorial and power calculations while ensuring a seamless user experience through an interactive menu interface that tracks calculation history for reference purposes.
 
-## History Management
-The Calculator Application now includes a comprehensive tracking of the user's calculation history. This feature has been enhanced by incorporating entries for factorial calculations into your historical data, providing an extensive record that reflects all operations performed within the application. Users can easily access their complete operation log at any time to review past results or perform further analysis on them if desired.
+## System Architecture (Unchanged)
+[Provide details about the system architecture if necessary]
 
-## Examples
-(No changes in this section as per instruction.)
+## Feature Specifications - Updated with New Operations
+- **Basic Arithmetic Operations**: Addition, subtraction, multiplication, division [unchanged content].
+- **Advanced Mathematical Functions** (New): Power/exponentiation and factorial operations. The calculator now supports calculating the nth power of a number as well as computing factorial values for integers using recursion or iteration methods where appropriate to optimize performance based on input size.
+- [Additional features if necessary]
 
-## Testing
-(No changes in this section as per instruction.)
+## User Interface Design (Unchanged)
+[Provide details about user interface design and interaction flow with new changes highlighted, if any.]
+
+## Technical Implementation Details for the Factorial Operation (New Section Added)
+The factorial operation has been implemented using a recursive approach to calculate n! where 'n' is an integer input. The function `factorial(n)` returns the product of all positive integers up to and including that number, with special handling when negative numbers are entered or non-integer values provided as inputs for error checking before attempting any calculation.
+
+## Error Handling Framework Enhancements (Updated)
+The application now includes comprehensive input validation across its operations: it checks if the user's entry is a valid integer and handles division by zero errors gracefully, displaying appropriate messages to guide users towards correct usage of calculator functions without terminating unexpectedly. The error handling framework has been updated in line with these changes for consistency throughout all features.
+
+## Testing Strategy (Updated)
+Unit tests have been added specifically targeting the newly introduced factorial and power operations, ensuring that they function correctly across a range of inputs including edge cases such as zero or negative numbers where applicable within our calculator's logic constraints. These unit tests are part of an ongoing process to maintain high-quality standards for all features in this application.
+
+## History Management Updates and Examples (Updated)
+The history management section has been expanded with examples demonstrating the recording, viewing, and navigating through calculation histories that now include factorial operations alongside basic arithmetic calculations. These historical records are maintained within a session-specific context to ensure data persistence between uses of our calculator application for educational or reference purposes by users.
+
+## Documentation of Installation Process (Updated)
+[Provide updated installation instructions if necessary, detailing any changes made due to the new feature addition.]
+
+## Usage Instru0ctions - Incorporating Factorial Operation Guide (
