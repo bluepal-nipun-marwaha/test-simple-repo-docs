@@ -1,52 +1,27 @@
-## Calculator Application Documentation - Updated for feat: add factorial operation to calculator
+## Calculator Application Documentation - Updated for Feature Addition
 
-**Version 1.0 (Updated)**
-Table of Contents
+# Overview
+The Calculator Application is a Python-based command-line calculator enhanced with factorial operation, providing basic arithmetic operations along with an advanced mathematical feature set and user interaction capabilities. The application includes calculation history tracking and comprehensive error handling to ensure smooth usage across various scenarios including edge cases like division by zero or invalid inputs.
+
+## Features
+The Calculator Application now boasts the following features:
+- **Basic Arithmetic Operations**: Addition, subtraction, multiplication, division (existing)
+- **Advanced Operations**: Power/exponentiation and Factorial operation for non-negative integers. The factorial function is implemented using recursion with appropriate error handling to manage invalid inputs gracefully. 
+- **Calculation History**: Track and view all previous calculations, including the newly added factorial operations (enhanced). Users can navigate through their history of basic arithmetic as well as advanced operation results like power/exponentiation or factorial computations using intuitive commands within the interactive menu interface. The application now supports an extended range of mathematical functions to cater for more complex calculations, which are still backed by robust error handling mechanisms.
+- **Error Handling**: Graceful handling of invalid inputs and division by zero (existing). Error messages have been updated across all operations including the newly added factorial operation with appropriate feedback provided during erroneous input scenarios or when encountering non-integer values for calculations that require integers only, such as in a factorial computation.
+- **Interactive Menu**: Easy-to-use command-line interface (existing) now includes additional options to compute power/exponentiation and the newly introduced factorial operation directly from the menu without navigating through separate sections of documentation or code snippets, providing an all-inclusive user experience.
+- **History Management**: The history management system has been expanded with clear distinctions between basic arithmetic operations' results stored separately in a dedicated section for advanced mathematical functions like power/exponentiation and factorial computations to facilitate easy retrieval of specific operation histories by the users, thereby enhancing navigation within their calculation journey.
+- **Examples**: New examples demonstrating usage scenarios involving both basic arithmetic operations as well as newly added feature cases such as computing powers or factorials have been incorporated into this documentation to guide and educate newcomers on how to leverage the full spectrum of calculator capabilities effectively (new). 
+- **Testing**: Test suites covering all existing features along with additional test scenarios for power/exponentiation, including edge cases like zero or negative inputs which are not valid in factorial computations but may occur during testing phases have been included to ensure the reliability and accuracy of this newly added feature (new).
+
+## Table of Contents
 1. Executive Summary
-2. Introduction/Application Overview
+2. Application Overview
 3. System Architecture
-4. Feature Specifications
+4. Feature Specifications - Including detailed specifics on new factorial operation implementation, error handling for non-integer inputs in the context of a calculator application and expanded calculation history tracking system (new). 
 5. User Interface Design
-6. Technical Implementation Details
-7. Error Handling Framework and Examples
-8. History Management for Calculations (New)
-9. Usage Instructions with Factorial Operation Example (New)
-10. Testing Strategy and Results (Updated to reflect new feature)
-11. FAQs/Examples Section Expanded (Including factorial operation examples, New)
-12. Glossary of Terms Used in the Application (Expanded with relevant terms from this commit's context, Updated)
-
-### Overview
-The Calculator Application is a Python-based command-line calculator that provides basic arithmetic operations along with an advanced factorial operation feature for users to calculate large numbers efficiently. It includes calculation history tracking and comprehensive error handling while maintaining its user-friendly interactive interface. The addition of the factorial function extends our application's functionality, allowing it to serve a broader range of mathematical needs beyond simple arithmetic tasks.
-
-### Features (Updated)
-- **Basic Arithmetic Operations**: Addition, subtraction, multiplication, division
-- **Advanced Factorial Operation**: Calculate factorial for non-negative integers using an efficient algorithm to handle large numbers without overflow issues
-- **Calculation History Tracking**: Record and view all previous calculations (including the new factorial operation) with ease of navigation through history entries. 
-- **Error Handling Framework**: Graceful handling of invalid inputs, division by zero errors, as well as informative error messages for unsupported operations or incorrect input formats.
-- **Interactive Menu Interface**: Easy to use command-line interface that now includes an option to calculate factorials in addition to basic arithmetic tasks. 
-
-### Installation and Usage (Updated)
-To install the Calculator Application, follow these steps... [Instructions updated with any changes from this commit] ... To begin using our calculator application: [...] Include instructions for calculating a factorial within usage examples as well as in error handling sections. 
-
-### Technical Implementation Details (Updated)
-The technical implementation of the new feature includes an efficient algorithm to calculate large numbers' factorial without overflow issues, such as utilizing Python’s arbitrary-precision arithmetic capabilities or employing a library like `decimal`. [Detailed explanation and code snippet for calculating factorial] 
-
-### Error Handling Framework (Updated)
-The error handling framework now includes specific cases related to the new feature. For instance, when an invalid input is provided as non-integer values where integers are expected or if a user attempts to calculate the factorial of negative numbers... [Detailed examples and explanations] ... 
-
-### History Management for Calculations (New)
-The history management section has been expanded with detailed instructions on how users can navigate through their calculation histories, including entries involving calculations using the new factorial operation. It also provides guidance on clearing or exporting this data if needed... [Clear and concise usage examples] ... 
-
-### Usage Instructions (Updated)
-To use our Calculator Application with its latest feature: [...] Include instructions for calculating a factorial, such as entering `calc_factorial(5)` to get the result of 120. [Examples and detailed usage steps] ...
-
-### Testing Strategy and Results (Updated)
-The testing strategy has been updated with additional tests specifically designed to validate the correctness and performance of our new factorial operation feature... [Detailed test cases, expected results, and actual outcomes presented in a table or list format for clarity] ... 
-
-### FAQs/Examples Section Expanded (New)
-To assist users with common queries about using the Calculator Application's features: [...] Include frequently asked questions regarding factorial calculations along with practical examples illustrating how to use this operation effectively. [FAQ list and example scenarios] ... 
-
-### Glossary of Terms Used in the Application (Updated)
-The glossary section has been expanded with relevant terms that are pertinent to understanding our application's factorial calculation feature, such as "factorial," "arbitrary-precision arithmetic," and any specific terminology used within this commit. [Glossary entries] ... 
-
-This updated documentation reflects
+6. Technical Implementation - Documentation now includes code snippets or command examples illustrating how to invoke advanced operations like power/exponentiation directly from within the interactive menu interface, providing users with immediate accessibility for sophisticated calculations without additional navigation steps (new). 
+7. Error Handling Framework - Detailed explanations of error messages and handling mechanisms specific to factorial operation cases such as non-integer inputs or invalid values have been added alongside existing basic arithmetic operations' scenarios, ensuring comprehensive coverage across all potential user interaction points within the calculator application (new). 
+8. Testing & Quality Assurance - Expanded testing sections now include test suites for power/exponentiation and factorial computations to ensure robustness against a wider array of input cases including edge scenarios, thereby guaranteeing reliable performance across all features offered by the Calculator Application (new). 
+9. History Management - Newly added section detailing how users can navigate through their calculation history with clear distinctions between basic arithmetic operations and advanced mathematical functions like power/exponentiation or factorial computations to enhance user experience in tracking calculations over time within this Python-based command-line calculator (new). 
+10. Examples - New examples demonstrating the usage of both existing features as well as newly added ones, including scenarios involving advanced operations such as power/exponentiation and factorial computations to guide users on how best to utilize all functionalities provided by this enhanced Calculator Application (new).
