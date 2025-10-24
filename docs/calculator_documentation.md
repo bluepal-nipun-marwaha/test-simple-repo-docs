@@ -25,3 +25,7 @@ The Calculator Application now boasts the following features:
 8. Testing & Quality Assurance - Expanded testing sections now include test suites for power/exponentiation and factorial computations to ensure robustness against a wider array of input cases including edge scenarios, thereby guaranteeing reliable performance across all features offered by the Calculator Application (new). 
 9. History Management - Newly added section detailing how users can navigate through their calculation history with clear distinctions between basic arithmetic operations and advanced mathematical functions like power/exponentiation or factorial computations to enhance user experience in tracking calculations over time within this Python-based command-line calculator (new). 
 10. Examples - New examples demonstrating the usage of both existing features as well as newly added ones, including scenarios involving advanced operations such as power/exponentiation and factorial computations to guide users on how best to utilize all functionalities provided by this enhanced Calculator Application (new).
+
+## Update: added a new function: factorial
+
+Documentation updated based on recent changes.
