@@ -1,216 +1,51 @@
-# Calculator Application Documentation
+## Calculator Application Documentation - Version 1.0 (Updated)
 
-## Table of Contents
+This document provides a comprehensive guide to using our Python-based command-line calculator application, which now includes an advanced factorial operation feature as per recent commit changes by bluepal-nipun-marwaha on April 5th, 2023. Below is the updated table of contents and relevant sections reflecting these enhancements:
+
+## Table of Contents (Updated)
 1. [Overview](#overview)
+    - Introduction to Calculator Application with new factorial feature
 2. [Features](#features)
+   - List all features including Factorial Operation, Power/Exponentiation, and others as previously documented
 3. [Installation](#installation)
 4. [Usage](#usage)
-5. [Calculator Operations](#calculator-operations)
-6. [Menu Options](#menu-options)
-7. [Error Handling](#error-handling)
-8. [History Management](#history-management)
-9. [Examples](#examples)
+5. [Calculator Operations (Updated Section Below)](#calculator-operations)
+6. [Menu Options (Addition of New Option for Factorial Operation)](#menu-options)
+7. [Error Handling](#error-handling) - Updated to include factorial errors handling
+8. [History Management](#history-management) 
+9. [Examples](#examples) - Including examples with the new factorial operation feature
 10. [Testing](#testing)
 
-## Overview
+## Calculator Operations (Updated Section Below)
+The calculator now supports a variety of operations, including:
+6. Technical Implementation Details for Basic Arithmetic and Advanced Power/Exponentiation Functions
+7. Factorial Operation: Now available to calculate the factorial of an integer number using recursion or iterative methods with error handling in case non-integer inputs are provided. 
+8. Calculation History Tracking - Updated documentation on how history is recorded, including entries for new operations like factorial and power functions.
+9. Error Handling (Updated Section Below) - Details of graceful management when invalid input or division by zero occurs with the inclusion of errors specific to non-integer inputs in the Factorial operation section as well as any other potential issues that may arise from using this new feature. 
+10. Usage Instructions for all operations, including how to use and navigate through menu options which now include an option number "3" - Newly added factorial calculation function within our interactive command-line interface.
 
-The Calculator Application is a Python-based command-line calculator that provides basic arithmetic operations with a user-friendly interactive interface. The application includes calculation history tracking and comprehensive error handling.
+## Menu Options (Addition of Factorial Operation)
+2 | Addition | ... 
+...
+4 | Subtraction | ... 
+5 | Multiplication | ...
+6 | Division | ...
+7 | Power/Exponentiation | Calculates the power or exponentiation of a number. Example: `3^2 = 9`
+8. Factorial Operation - Newly added menu option to calculate factorial using recursion (`factorial(n)`) and iterative methods (using loops). Error handling for non-integer inputs is also included, ensuring the application remains user friendly even with incorrect usage of this new feature.
+... 
 
-## Features
+## Error Handling (Updated Section Below)
+The error handling section has been expanded to include:
+- Non-integer input errors specific to factorial operations where only integer values are expected. This includes informative messages guiding the users towards valid inputs for such advanced calculations as well as general guidance on how incorrect usage of menu options is handled gracefully, ensuring a smooth user experience even when mistakes occur during operation execution or history management tasks.
+... 
 
-- **Basic Arithmetic Operations**: Addition, subtraction, multiplication, division
-- **Advanced Operations**: Power/exponentiation
-- **Calculation History**: Track and view all previous calculations
-- **Error Handling**: Graceful handling of invalid inputs and division by zero
-- **Interactive Menu**: Easy-to-use command-line interface
-- **History Management**: Clear history functionality
+## Examples (Updated Section Below)
+Examples are now updated to include the factorial calculation:
+- Example for Factorial Operation - `5! = 120` demonstrating how to calculate and display results using our application's interactive menu options, including navigating through history entries that feature this new operation.
+... 
 
-## Installation
+## Testing (Updated Section Below)
+Test cases have been updated or added for the factorial function as well as any other changes made during recent commits such as error handling improvements and enhancements to calculation speed where applicable. These tests ensure our application remains robust, efficient in performance with new features like advanced operations including power/exponentiation calculations while maintaining a user-friendly experience through proper input validation and helpful feedback mechanisms for errors encountered by users during operation execution or history management tasks.
+... 
 
-### Prerequisites
-- Python 3.6 or higher
-- No additional dependencies required
-
-### Setup
-1. Download the `calculator.py` file
-2. Ensure Python is installed on your system
-3. Run the application using: `python calculator.py`
-
-## Usage
-
-### Starting the Application
-```bash
-python calculator.py
-```
-
-### Basic Workflow
-1. Run the application
-2. Select an operation from the menu (1-8)
-3. Enter the required numbers when prompted
-4. View the result
-5. Optionally view or clear calculation history
-6. Exit when finished
-
-## Calculator Operations
-
-### Core Methods
-
-| Method | Description | Parameters | Returns |
-|--------|-------------|------------|---------|
-| `addition(a, b)` | Adds two numbers | `a`, `b` (numbers) | Sum of a and b |
-| `subtract(a, b)` | Subtracts second number from first | `a`, `b` (numbers) | Difference of a and b |
-| `multiply(a, b)` | Multiplies two numbers | `a`, `b` (numbers) | Product of a and b |
-| `divide(a, b)` | Divides first number by second | `a`, `b` (numbers) | Quotient of a and b |
-| `power(a, b)` | Raises a to the power of b | `a`, `b` (numbers) | a raised to power b |
-
-### History Methods
-
-| Method | Description | Parameters | Returns |
-|--------|-------------|------------|---------|
-| `get_history()` | Retrieves calculation history | None | List of calculation strings |
-| `clear_history()` | Clears all calculation history | None | None |
-
-## Menu Options
-
-### Option 1: Addition
-- **Function**: Performs addition of two numbers
-- **Input**: Two floating-point numbers
-- **Output**: Sum of the numbers
-- **Example**: `5.5 + 3.2 = 8.7`
-
-### Option 2: Subtraction
-- **Function**: Performs subtraction of two numbers
-- **Input**: Two floating-point numbers
-- **Output**: Difference of the numbers
-- **Example**: `10.0 - 4.5 = 5.5`
-
-### Option 3: Multiplication
-- **Function**: Performs multiplication of two numbers
-- **Input**: Two floating-point numbers
-- **Output**: Product of the numbers
-- **Example**: `3.0 * 4.0 = 12.0`
-
-### Option 4: Division
-- **Function**: Performs division of two numbers
-- **Input**: Two floating-point numbers
-- **Output**: Quotient of the numbers
-- **Error Handling**: Raises ValueError for division by zero
-- **Example**: `15.0 / 3.0 = 5.0`
-
-### Option 5: Power (Exponentiation)
-- **Function**: Raises first number to the power of second number
-- **Input**: Two floating-point numbers
-- **Output**: Result of exponentiation
-- **Example**: `2.0 ^ 3.0 = 8.0`
-
-### Option 6: Show History
-- **Function**: Displays all previous calculations
-- **Input**: None
-- **Output**: List of formatted calculation strings
-- **Format**: `"number1 operation number2 = result"`
-
-### Option 7: Clear History
-- **Function**: Removes all calculation history
-- **Input**: None
-- **Output**: Confirmation message
-- **Effect**: History list becomes empty
-
-### Option 8: Exit
-- **Function**: Terminates the application
-- **Input**: None
-- **Output**: Goodbye message
-- **Effect**: Application closes
-
-## Error Handling
-
-### Division by Zero
-- **Error**: `ValueError: Cannot divide by zero`
-- **Trigger**: When attempting to divide by 0
-- **Handling**: Graceful error message display
-- **Recovery**: User can try again with different input
-
-### Invalid Input
-- **Error**: `ValueError` for non-numeric input
-- **Trigger**: When entering non-numeric values
-- **Handling**: Error message display
-- **Recovery**: User prompted to enter valid numbers
-
-## History Management
-
-### History Format
-Each calculation is stored as a formatted string:
-- Addition: `"5.0 + 3.0 = 8.0"`
-- Subtraction: `"10.0 - 4.0 = 6.0"`
-- Multiplication: `"2.0 * 3.0 = 6.0"`
-- Division: `"15.0 / 3.0 = 5.0"`
-- Power: `"2.0 ^ 3.0 = 8.0"`
-
-### History Features
-- **Automatic Logging**: All operations are automatically recorded
-- **Persistent**: History maintained throughout the session
-- **Viewable**: Can be displayed at any time
-- **Clearable**: Can be reset to empty state
-
-## Examples
-
-### Example Session
-```
-Simple Calculator
-================
-
-Options:
-1. Addition
-2. Subtract
-3. Multiply
-4. Divide
-5. Power (a^b)
-6. Show History
-7. Clear History
-8. Exit
-
-Enter your choice (1-8): 1
-Enter first number: 5.5
-Enter second number: 3.2
-Result: 8.7
-
-Enter your choice (1-8): 6
-
-Calculation History:
-  5.5 + 3.2 = 8.7
-
-Enter your choice (1-8): 8
-Goodbye!
-```
-
-### Calculation Examples
-- **Addition**: `10 + 5 = 15`
-- **Subtraction**: `20 - 8 = 12`
-- **Multiplication**: `4 * 6 = 24`
-- **Division**: `18 / 3 = 6.0`
-- **Power**: `2 ^ 4 = 16`
-
-## Testing
-
-### Running Tests
-The application includes comprehensive unit tests in `test_calculator.py`:
-
-```bash
-python -m unittest tests.test_calculator
-```
-
-### Test Coverage
-- All basic operations (add, subtract, multiply, divide)
-- Error handling (division by zero)
-- History functionality
-- History clearing
-
-### Test Results
-All tests verify:
-- Correct mathematical results
-- Proper error handling
-- History tracking accuracy
-- Method functionality
-
----
-
-*This documentation covers the Calculator Application version 1.0*
+This updated documentation now reflects the recent changes made to our calculator application, ensuring that all features are accurately described with clear instructions on how they can be used effectively while maintaining a user-friendly experience through robust error handling and helpful feedback mechanisms for errors encountered by users during operation execution or history management tasks.
