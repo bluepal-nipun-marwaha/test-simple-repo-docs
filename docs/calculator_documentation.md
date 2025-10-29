@@ -11,35 +11,206 @@
 8. [History Management](#history-management)
 9. [Examples](#examples)
 10. [Testing](#testing)
-    - [Running Tests](#running-tests)
-        - [Test Coverage](#test-coverage)
-        - [Test Results](#test-results)
-11. [History Management (Updated Section)](#history-management)
-12. [Factorial Operation Feature (New Section)](#factorial-operation-feature)
-    - [Message: feat: add factorial operation](#message---feat-add-factorial-operation)
-    - [Files Changed: src/calculator.py](#files-changed--srccalculatorpy)
-13. ## Overview (Updated Section)
-...
-## Features (Updated Section with Factorial Operation)
-...
-+ **Factorial Operations**: Calculation of factorial for non-negative integers using the `factorial` method
-    - Inputs: Non-negative integer numbers only
-    - Outputs: Resulting factorial value or an appropriate error message if input is invalid (e.g., negative number, non-integer)
-    - Example: Calculating 5! (`5 * 4 * 3 * 2 * 1 = 120`) would display `120`. Error handling for incorrect inputs as described in the "Error Handling" section applies here too.
-...
-## Installation (Updated Section)
-...
-+ **Files Changed**: src/calculator.py and test_calculator.py
-    - Added a new factorial operation feature to `src/calculator.py` as per the commit changes in `#1`. This update includes error handling for invalid inputs specific to the factorial function, such as negative numbers or non-integers. The corresponding unit tests have been updated and added to `test_calculator.py`.
-...
-## History Management (Updated Section)
-...
-+ **History Format**: Now also records operations related to calculating a number's factorial using the new method in `#1`. Each operation is logged with its result, e.g., `"5! = 120"`, and appended to the calculation history list within `src/calculator.py` as per commit changes in #1.
-...
-## Factorial Operation Feature (New Section)
-+ ### Message: feat: add factorial operation
-   - **Description**: Adds a new method for calculating the factorial of non-negative integers using recursion or iteration, depending on implementation choice within `src/calculator.py`. This feature enhances the application's capabilities beyond basic arithmetic operations and is included to provide users with more mathematical functionalities directly from their command line interface (CLI).
-+ ### Files Changed: src/calculator.py and test_calculator.py
-   - **Details**: The `factorial` method has been added to the existing codebase in `#1`. This addition includes comprehensive error handling for invalid inputs, such as negative numbers or non-integer values, ensuring robustness of this new feature against erroneous usage scenarios. Corresponding unit tests have also been created and updated within `test_calculator.py` to verify the correct implementation of factorial calculations across a range of test cases (e.g., typical positive integers like 5!, edge cases such as zero, negative inputs).
-+ ### Implementation: The method can be implemented using either recursion or iteration for calculating factorials in Python due to its dynamic nature and supportive syntax; however, the recursive approach is generally more intuitive but less efficient. Iterative solutions are recommended here because of their better performance characteristics with large input values (e.g., 10!).
-+ ### Example Usage: `5! = 120` demonstrates a typical use case for this new feature, where the user inputs '5' and expects to see output as `'120'` after executing the factorial operation command within the CLI of the Calculator Application. This example showcases how users can leverage additional mathematical functionalities directly from their Python-based calculator application without needing external tools or programs for such calculations, thereby enhancing user experience and
+
+## Overview
+
+The Calculator Application is a Python-based command-line calculator that provides basic arithmetic operations with a user-friendly interactive interface. The application includes calculation history tracking and comprehensive error handling.
+
+## Features
+
+- **Basic Arithmetic Operations**: Addition, subtraction, multiplication, division
+- **Advanced Operations**: Power/exponentiation
+- **Calculation History**: Track and view all previous calculations
+- **Error Handling**: Graceful handling of invalid inputs and division by zero
+- **Interactive Menu**: Easy-to-use command-line interface
+- **History Management**: Clear history functionality
+
+## Installation
+
+### Prerequisites
+- Python 3.6 or higher
+- No additional dependencies required
+
+### Setup
+1. Download the `calculator.py` file
+2. Ensure Python is installed on your system
+3. Run the application using: `python calculator.py`
+
+## Usage
+
+### Starting the Application
+```bash
+python calculator.py
+```
+
+### Basic Workflow
+1. Run the application
+2. Select an operation from the menu (1-8)
+3. Enter the required numbers when prompted
+4. View the result
+5. Optionally view or clear calculation history
+6. Exit when finished
+
+## Calculator Operations
+
+### Core Methods
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `addition(a, b)` | Adds two numbers | `a`, `b` (numbers) | Sum of a and b |
+| `subtract(a, b)` | Subtracts second number from first | `a`, `b` (numbers) | Difference of a and b |
+| `multiply(a, b)` | Multiplies two numbers | `a`, `b` (numbers) | Product of a and b |
+| `divide(a, b)` | Divides first number by second | `a`, `b` (numbers) | Quotient of a and b |
+| `power(a, b)` | Raises a to the power of b | `a`, `b` (numbers) | a raised to power b |
+
+### History Methods
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `get_history()` | Retrieves calculation history | None | List of calculation strings |
+| `clear_history()` | Clears all calculation history | None | None |
+
+## Menu Options
+
+### Option 1: Addition
+- **Function**: Performs addition of two numbers
+- **Input**: Two floating-point numbers
+- **Output**: Sum of the numbers
+- **Example**: `5.5 + 3.2 = 8.7`
+
+### Option 2: Subtraction
+- **Function**: Performs subtraction of two numbers
+- **Input**: Two floating-point numbers
+- **Output**: Difference of the numbers
+- **Example**: `10.0 - 4.5 = 5.5`
+
+### Option 3: Multiplication
+- **Function**: Performs multiplication of two numbers
+- **Input**: Two floating-point numbers
+- **Output**: Product of the numbers
+- **Example**: `3.0 * 4.0 = 12.0`
+
+### Option 4: Division
+- **Function**: Performs division of two numbers
+- **Input**: Two floating-point numbers
+- **Output**: Quotient of the numbers
+- **Error Handling**: Raises ValueError for division by zero
+- **Example**: `15.0 / 3.0 = 5.0`
+
+### Option 5: Power (Exponentiation)
+- **Function**: Raises first number to the power of second number
+- **Input**: Two floating-point numbers
+- **Output**: Result of exponentiation
+- **Example**: `2.0 ^ 3.0 = 8.0`
+
+### Option 6: Show History
+- **Function**: Displays all previous calculations
+- **Input**: None
+- **Output**: List of formatted calculation strings
+- **Format**: `"number1 operation number2 = result"`
+
+### Option 7: Clear History
+- **Function**: Removes all calculation history
+- **Input**: None
+- **Output**: Confirmation message
+- **Effect**: History list becomes empty
+
+### Option 8: Exit
+- **Function**: Terminates the application
+- **Input**: None
+- **Output**: Goodbye message
+- **Effect**: Application closes
+
+## Error Handling
+
+### Division by Zero
+- **Error**: `ValueError: Cannot divide by zero`
+- **Trigger**: When attempting to divide by 0
+- **Handling**: Graceful error message display
+- **Recovery**: User can try again with different input
+
+### Invalid Input
+- **Error**: `ValueError` for non-numeric input
+- **Trigger**: When entering non-numeric values
+- **Handling**: Error message display
+- **Recovery**: User prompted to enter valid numbers
+
+## History Management
+
+### History Format
+Each calculation is stored as a formatted string:
+- Addition: `"5.0 + 3.0 = 8.0"`
+- Subtraction: `"10.0 - 4.0 = 6.0"`
+- Multiplication: `"2.0 * 3.0 = 6.0"`
+- Division: `"15.0 / 3.0 = 5.0"`
+- Power: `"2.0 ^ 3.0 = 8.0"`
+
+### History Features
+- **Automatic Logging**: All operations are automatically recorded
+- **Persistent**: History maintained throughout the session
+- **Viewable**: Can be displayed at any time
+- **Clearable**: Can be reset to empty state
+
+## Examples
+
+### Example Session
+```
+Simple Calculator
+================
+
+Options:
+1. Addition
+2. Subtract
+3. Multiply
+4. Divide
+5. Power (a^b)
+6. Show History
+7. Clear History
+8. Exit
+
+Enter your choice (1-8): 1
+Enter first number: 5.5
+Enter second number: 3.2
+Result: 8.7
+
+Enter your choice (1-8): 6
+
+Calculation History:
+  5.5 + 3.2 = 8.7
+
+Enter your choice (1-8): 8
+Goodbye!
+```
+
+### Calculation Examples
+- **Addition**: `10 + 5 = 15`
+- **Subtraction**: `20 - 8 = 12`
+- **Multiplication**: `4 * 6 = 24`
+- **Division**: `18 / 3 = 6.0`
+- **Power**: `2 ^ 4 = 16`
+
+## Testing
+
+### Running Tests
+The application includes comprehensive unit tests in `test_calculator.py`:
+
+```bash
+python -m unittest tests.test_calculator
+```
+
+### Test Coverage
+- All basic operations (add, subtract, multiply, divide)
+- Error handling (division by zero)
+- History functionality
+- History clearing
+
+### Test Results
+All tests verify:
+- Correct mathematical results
+- Proper error handling
+- History tracking accuracy
+- Method functionality
+
+---
+
+*This documentation covers the Calculator Application version 1.0*
