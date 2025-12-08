@@ -115,11 +115,6 @@ python calculator.py
 - **Output**: Confirmation message
 - **Effect**: History list becomes empty
 
-### Option 8: Exit
-- **Function**: Terminates the application
-- **Input**: None
-- **Output**: Goodbye message
-- **Effect**: Application closes
 
 ## Error Handling
 
@@ -166,9 +161,8 @@ Options:
 5. Power (a^b)
 6. Show History
 7. Clear History
-8. Exit
 
-Enter your choice (1-8): 1
+Enter your choice (1-7): 1
 Enter first number: 5.5
 Enter second number: 3.2
 Result: 8.7
@@ -177,9 +171,6 @@ Enter your choice (1-8): 6
 
 Calculation History:
   5.5 + 3.2 = 8.7
-
-Enter your choice (1-8): 8
-Goodbye!
 ```
 
 ### Calculation Examples
