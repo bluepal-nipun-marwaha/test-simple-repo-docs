@@ -22,7 +22,7 @@ The Calculator Application is a Python-based command-line calculator that provid
 ## Features
 
 - **Basic Arithmetic Operations**: Addition, subtraction, multiplication, division
-- **Advanced Operations**: Power/exponentiation, factorial calculation
+- **Advanced Operations**: Power/exponentiation, factorial
 - **Calculation History**: Track and view all previous calculations
 - **Error Handling**: Graceful handling of invalid inputs and division by zero
 - **Interactive Menu**: Easy-to-use command-line interface
@@ -74,7 +74,7 @@ python calculator.py
 | `multiply(a, b)` | Multiplies two numbers | `a`, `b` (numbers) | Product of a and b |
 | `divide(a, b)` | Divides first number by second | `a`, `b` (numbers) | Quotient of a and b |
 | `power(a, b)` | Raises a to the power of b | `a`, `b` (numbers) | a raised to power b |
-| `factorial(n)` | Calculates factorial of a number | `n` (integer) | Factorial of n |
+| `factorial(n)` | Calculates the factorial of a number | `n` (integer) | Factorial of n |
 
 
 ### History Methods
@@ -258,9 +258,27 @@ All tests verify:
 
 ### Option 6: Factorial
 - **Function**: Calculates the factorial of a number
-- **Input**: One integer
+- **Input**: A non-negative integer
 - **Output**: Factorial of the number
 - **Example**: `5! = 120`
 
 
 ### Option 7: Show History
+- **Function**: Displays all previous calculations
+- **Input**: None
+- **Output**: List of formatted calculation strings
+- **Format**: `"number1 operation number2 = result"`
+
+
+### Option 8: Clear History
+- **Function**: Removes all calculation history
+- **Input**: None
+- **Output**: Confirmation message
+- **Effect**: History list becomes empty
+
+
+### Option 9: Exit
+- **Function**: Exits the application
+- **Input**: None
+- **Output**: Goodbye message
+```
