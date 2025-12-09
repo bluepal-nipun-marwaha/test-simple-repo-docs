@@ -27,7 +27,6 @@ The Calculator Application is a Python-based command-line calculator that provid
 - **Error Handling**: Graceful handling of invalid inputs and division by zero
 - **Interactive Menu**: Easy-to-use command-line interface
 - **History Management**: Clear history functionality
-- **Exit Option**: Easily exit the application
 
 
 ## Installation
@@ -57,6 +56,8 @@ python calculator.py
 1. Run the application
 2. Select an operation from the menu (1-9)
 3. Enter the required numbers when prompted
+   - For factorial (option 6) the application expects an integer input
+   - For other arithmetic options, it accepts floating-point numbers
 4. View the result
 5. Optionally view or clear calculation history
 6. Exit when finished
@@ -74,7 +75,7 @@ python calculator.py
 | `multiply(a, b)` | Multiplies two numbers | `a`, `b` (numbers) | Product of a and b |
 | `divide(a, b)` | Divides first number by second | `a`, `b` (numbers) | Quotient of a and b |
 | `power(a, b)` | Raises a to the power of b | `a`, `b` (numbers) | a raised to power b |
-| `factorial(n)` | Calculates the factorial of a number | `n` (integer) | Factorial of n |
+| `factorial(n)` | Computes the factorial of a number | `n` (integer) | Factorial of n |
 
 
 ### History Methods
@@ -242,23 +243,9 @@ All tests verify:
 *This documentation covers the Calculator Application version 1.0*
 
 
-### Option 1: Subtraction
-- **Function**: Performs subtraction of two numbers
-- **Input**: Two floating-point numbers
-- **Output**: Difference of the numbers
-- **Example**: `10.0 - 4.5 = 5.5`
-
-
-### Option 2: Addition
-- **Function**: Performs addition of two numbers
-- **Input**: Two floating-point numbers
-- **Output**: Sum of the numbers
-- **Example**: `5.5 + 3.2 = 8.7`
-
-
 ### Option 6: Factorial
-- **Function**: Calculates the factorial of a number
-- **Input**: A non-negative integer
+- **Function**: Computes the factorial of a number
+- **Input**: One integer
 - **Output**: Factorial of the number
 - **Example**: `5! = 120`
 
@@ -267,18 +254,4 @@ All tests verify:
 - **Function**: Displays all previous calculations
 - **Input**: None
 - **Output**: List of formatted calculation strings
-- **Format**: `"number1 operation number2 = result"`
-
-
-### Option 8: Clear History
-- **Function**: Removes all calculation history
-- **Input**: None
-- **Output**: Confirmation message
-- **Effect**: History list becomes empty
-
-
-### Option 9: Exit
-- **Function**: Exits the application
-- **Input**: None
-- **Output**: Goodbye message
-```
+- **Format**: `"number1
